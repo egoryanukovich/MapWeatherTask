@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DailyCell" id="gTV-IL-0wX" customClass="DailyCell" customModule="MapWeatherTask" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="96" height="69"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="96" height="69"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11-11" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ev-zi-g3H">
+                        <rect key="frame" x="0.0" y="0.0" width="34" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99 ˚C" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WKh-rO-IZg">
+                        <rect key="frame" x="55" y="0.0" width="41" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100 %" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hOa-4H-obU">
+                        <rect key="frame" x="0.0" y="51" width="47" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="47" id="Mll-aB-Ycm"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="13d" translatesAutoresizingMaskIntoConstraints="NO" id="uMP-QV-3rt">
+                        <rect key="frame" x="28" y="19" width="41" height="30"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Snowing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4j2-jd-SSq">
+                        <rect key="frame" x="55" y="51" width="41" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="hOa-4H-obU" firstAttribute="bottom" secondItem="4j2-jd-SSq" secondAttribute="bottom" id="2eU-oc-88i"/>
+                <constraint firstItem="uMP-QV-3rt" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="19" id="AJt-ps-sCv"/>
+                <constraint firstAttribute="trailing" secondItem="WKh-rO-IZg" secondAttribute="trailing" id="Dum-zR-7WZ"/>
+                <constraint firstItem="1Ev-zi-g3H" firstAttribute="baseline" secondItem="WKh-rO-IZg" secondAttribute="baseline" id="FqJ-aM-4fP"/>
+                <constraint firstItem="4j2-jd-SSq" firstAttribute="leading" secondItem="WKh-rO-IZg" secondAttribute="leading" id="Gbw-bY-RDu"/>
+                <constraint firstItem="hOa-4H-obU" firstAttribute="leading" secondItem="1Ev-zi-g3H" secondAttribute="leading" id="Ijo-ef-aWB"/>
+                <constraint firstItem="1Ev-zi-g3H" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="KVC-o9-76J"/>
+                <constraint firstItem="1Ev-zi-g3H" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="QRH-oB-1US"/>
+                <constraint firstItem="uMP-QV-3rt" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="28" id="RGt-JA-pZk"/>
+                <constraint firstItem="uMP-QV-3rt" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="TqR-yO-6bx"/>
+                <constraint firstItem="hOa-4H-obU" firstAttribute="top" secondItem="4j2-jd-SSq" secondAttribute="top" id="fbZ-DU-BHj"/>
+                <constraint firstItem="uMP-QV-3rt" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="sMf-0g-UVn"/>
+                <constraint firstAttribute="bottom" secondItem="hOa-4H-obU" secondAttribute="bottom" id="wzX-oh-u8p"/>
+            </constraints>
+            <connections>
+                <outlet property="dateLabel" destination="1Ev-zi-g3H" id="zbt-eq-2jz"/>
+                <outlet property="humidityLabel" destination="hOa-4H-obU" id="Abb-4c-2xR"/>
+                <outlet property="temperatureLabel" destination="WKh-rO-IZg" id="NP0-kk-Jc7"/>
+                <outlet property="weatherImage" destination="uMP-QV-3rt" id="AUM-UM-Ns7"/>
+                <outlet property="weatherInfo" destination="4j2-jd-SSq" id="u5F-Dx-DBc"/>
+            </connections>
+            <point key="canvasLocation" x="26" y="52.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="13d" width="325" height="325"/>
+    </resources>
+</document>
